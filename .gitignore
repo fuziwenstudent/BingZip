@@ -1,0 +1,35 @@
+# macOS
+.DS_Store
+**/.DS_Store
+._*
+
+# IDE / editor caches
+.codeartsdoer/
+*.xcuserstate
+xcuserdata/
+DerivedData/
+
+# Swift Package Manager / build output
+BingZip/.build/
+BingZip/.buildSystem_*
+BingZip/.swiftpm/
+BingZip/Packages/
+
+# Packaged app and release artifacts (published through GitHub Releases)
+BingZip/dist/
+dist/
+
+# 7-Zip prebuilt engine / object outputs
+CPP/7zip/Bundles/*/b/m_*/
+CPP/7zip/Bundles/*/b/*.o
+*.o
+*.a
+*.dSYM/
+
+# Upstream source archive (the source tree itself is committed)
+7zip-26.05.zip
+
+# Temporary files
+*.tmp
+*.swp
+*~

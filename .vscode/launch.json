@@ -1,0 +1,24 @@
+{
+    "configurations": [
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder}/BingZip",
+            "name": "Debug BingZip (BingZip)",
+            "target": "BingZip",
+            "configuration": "debug",
+            "preLaunchTask": "swift: Build Debug BingZip (BingZip)"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder}/BingZip",
+            "name": "Release BingZip (BingZip)",
+            "target": "BingZip",
+            "configuration": "release",
+            "preLaunchTask": "swift: Build Release BingZip (BingZip)"
+        }
+    ]
+}

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleDevelopmentRegion</key>
+    <string>zh_CN</string>
+    <key>CFBundleExecutable</key>
+    <string>BingZip</string>
+    <key>CFBundleIconFile</key>
+    <string>AppIcon</string>
+    <key>CFBundleIdentifier</key>
+    <string>com.bingzip.app</string>
+    <key>CFBundleInfoDictionaryVersion</key>
+    <string>6.0</string>
+    <key>CFBundleName</key>
+    <string>BingZip</string>
+    <key>CFBundleDisplayName</key>
+    <string>BingZip</string>
+    <key>CFBundlePackageType</key>
+    <string>APPL</string>
+    <key>CFBundleShortVersionString</key>
+    <string>1.2</string>
+    <key>CFBundleVersion</key>
+    <string>12</string>
+    <key>LSMinimumSystemVersion</key>
+    <string>11.0</string>
+    <key>LSMultipleInstancesProhibited</key>
+    <true/>
+    <key>NSHighResolutionCapable</key>
+    <true/>
+    <key>NSPrincipalClass</key>
+    <string>NSApplication</string>
+    <key>NSServices</key>
+    <array>
+        <dict>
+            <key>NSMenuItem</key>
+            <dict>
+                <key>default</key>
+                <string>添加到 BingZip 压缩包…</string>
+            </dict>
+            <key>NSMessage</key>
+            <string>serviceAddToArchive</string>
+            <key>NSPortName</key>
+            <string>BingZip</string>
+            <key>NSSendFileTypes</key>
+            <array>
+                <string>public.item</string>
+            </array>
+        </dict>
+        <dict>
+            <key>NSMenuItem</key>
+            <dict>
+                <key>default</key>
+                <string>用 BingZip 解压…</string>
+            </dict>
+            <key>NSMessage</key>
+            <string>serviceExtractArchive</string>
+            <key>NSPortName</key>
+            <string>BingZip</string>
+            <key>NSSendFileTypes</key>
+            <array>
+                <string>public.item</string>
+            </array>
+        </dict>
+    </array>
+    <key>NSSupportsAutomaticGraphicsSwitching</key>
+    <true/>
+    <key>CFBundleDocumentTypes</key>
+    <array>
+        <dict>
+            <key>CFBundleTypeName</key>
+            <string>压缩包</string>
+            <key>CFBundleTypeRole</key>
+            <string>Viewer</string>
+            <key>LSHandlerRank</key>
+            <string>Alternate</string>
+            <key>LSItemContentTypes</key>
+            <array>
+                <string>public.archive</string>
+                <string>org.7-zip.7-zip-archive</string>
+                <string>public.zip-archive</string>
+                <string>com.rarlab.rar-archive</string>
+                <string>public.tar-archive</string>
+                <string>org.gnu.gnu-zip-archive</string>
+                <string>org.gnu.gnu-zip-tar-archive</string>
+                <string>public.bzip2-archive</string>
+                <string>org.tukaani.xz-archive</string>
+            </array>
+        </dict>
+    </array>
+    <key>NSDesktopFolderUsageDescription</key>
+    <string>BingZip 需要访问桌面中的文件,以便压缩、解压和扫描压缩包。</string>
+    <key>NSDocumentsFolderUsageDescription</key>
+    <string>BingZip 需要访问“文稿”中的文件,以便压缩、解压和扫描压缩包。</string>
+    <key>NSDownloadsFolderUsageDescription</key>
+    <string>BingZip 需要访问“下载”中的文件,以便压缩、解压和扫描压缩包。</string>
+    <key>NSRemovableVolumesUsageDescription</key>
+    <string>BingZip 需要访问外接磁盘中的文件,以便压缩、解压和扫描压缩包。</string>
+    <key>NSNetworkVolumesUsageDescription</key>
+    <string>BingZip 需要访问网络卷中的文件,以便压缩、解压和扫描压缩包。</string>
+    <key>CFBundleURLTypes</key>
+    <array>
+        <dict>
+            <key>CFBundleURLName</key>
+            <string>com.bingzip.app</string>
+            <key>CFBundleURLSchemes</key>
+            <array>
+                <string>bingzip</string>
+            </array>
+        </dict>
+    </array>
+</dict>
+</plist>
